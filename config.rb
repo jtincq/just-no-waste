@@ -51,3 +51,8 @@ activate :deploy do |deploy|
   deploy.remote = 'https://github.com/jtincq/juste-simple-landing.git'
   deploy.deploy_method = :git
 end
+
+#  Root links relative to /juste-simple-landing
+configure :build do
+   set :http_prefix, "/juste-simple-landing"
+end
