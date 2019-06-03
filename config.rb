@@ -52,7 +52,7 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
 end
 
-#  Root links relative to /juste-simple-landing
-# configure :build do
-#    set :http_prefix, "/juste-simple-landing"
-# end
+# Root links relative to /juste-simple-landing
+configure :build do
+   set :http_prefix, "/juste-simple-landing"
+end
