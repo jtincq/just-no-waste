@@ -53,6 +53,6 @@ activate :deploy do |deploy|
 end
 
 #  Root links relative to /juste-simple-landing
-configure :build do
-   set :http_prefix, "/juste-simple-landing"
-end
+# configure :build do
+#    set :http_prefix, "/juste-simple-landing"
+# end
