@@ -52,6 +52,7 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
 end
 
+# root in development
 configure :build do
   activate :relative_assets
 end
