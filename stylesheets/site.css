@@ -1,6 +1,7 @@
 /* --- Components --- */
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
 @import url("https://use.fontawesome.com/releases/v5.0.10/css/all.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap");
 .banner {
   background-size: cover;
   background-position: center;
@@ -34,7 +35,8 @@
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   position: relative;
-  top: -80px; }
+  top: -80px;
+  margin-bottom: -40px; }
 
 /* --- Responsive design --- */
 @media (max-width: 960px) {
@@ -51,6 +53,54 @@
   /* For a screen < 540px, this CSS will be read */
   .card-action {
     width: 250px; } }
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px; }
+
+.card {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 0 20px; }
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; } }
+
+@media (min-width: 576px) {
+  .cards {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; } }
+
+@media (min-width: 768px) {
+  .cards {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; } }
+
+@media (min-width: 992px) {
+  .cards {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; } }
+
+@media (min-width: 1200px) {
+  .cards {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; } }
 
 .btn-action {
   background: #FFAB03;
@@ -73,7 +123,8 @@
   height: 100px;
   padding: 0px 50px;
   color: rgba(0, 0, 0, 0.3);
-  margin: 0; }
+  margin: 0;
+  margin-top: 50px; }
 
 .footer-links {
   display: flex;
@@ -105,13 +156,25 @@ body {
 
 .main-container {
   width: 900px;
-  margin: auto; }
+  margin: 0 auto;
+  position: relative; }
 
 h1 {
   font-size: 40px; }
 
 h2 {
   font-size: 30px; }
+
+h3 {
+  font-size: 25px; }
+
+p {
+  font-size: 20px; }
+
+#juste {
+  font-family: "Monserrat", "Open Sans", "Helvetica", "sans-serif";
+  font-weight: bold;
+  font-style: italic; }
 
 /* --- Responsive design --- */
 @media (max-width: 960px) {
