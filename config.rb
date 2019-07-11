@@ -57,7 +57,5 @@ configure :build do
   activate :relative_assets
 end
 
-# # Root links relative to /juste-simple-landing
-# configure :build do
-#    set :http_prefix, "/juste-simple-landing"
-# end
+# Pretty URLs
+activate :directory_indexes
