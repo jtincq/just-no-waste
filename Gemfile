@@ -8,5 +8,5 @@ gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 gem 'sass'
 
 gem 'jquery-middleman'
-gem 'bootstrap-sass', '~> 3.3.1'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'font-awesome-sass', '~> 4.2.0'
